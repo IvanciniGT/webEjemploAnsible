@@ -44,7 +44,7 @@ ServerRoot "c:/Program Files (x86)/Apache Software Foundation/Apache2.2"
 # prevent Apache from glomming onto all bound IP addresses.
 #
 #Listen 12.34.56.78:80
-Listen 80
+Listen {{ puerto }}
 
 #
 # Dynamic Shared Object (DSO) Support
@@ -161,7 +161,7 @@ Group daemon
 # e-mailed.  This address appears on some server-generated pages, such
 # as error documents.  e.g. admin@your-domain.com
 #
-ServerAdmin nuevo@nuevo.com
+ServerAdmin {{ email_administrador_apache }}
 
 #
 # ServerName gives the name and port that the server uses to identify itself.
